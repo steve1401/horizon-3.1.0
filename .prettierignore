@@ -1,0 +1,17 @@
+# --- Keep Prettier away from Shopify theme code ---
+
+# Liquid templates (layouts, templates, sections, snippets)
+*.liquid
+
+# Theme styles and scripts
+*.css
+*.js
+
+# JSON files (including Shopify config & settings)
+*.json
+
+# Optional: if you use a build setup, you can still allow tooling configs
+# by uncommenting specific files you WANT Prettier to touch, e.g.:
+# !package.json
+# !tsconfig.json
+# !.prettierrc

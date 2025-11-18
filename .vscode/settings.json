@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true,
+  "prettier.ignorePath": ".prettierignore",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[liquid]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false
+  }
+}
