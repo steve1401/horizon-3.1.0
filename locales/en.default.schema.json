@@ -56,6 +56,7 @@
     "collection_page": "Collection page",
     "complementary_products": "Complementary products must be set up using the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery)",
     "content_width": "Content width only applies when the section width is set to full width.",
+    "content_options": "Content options",
     "copyright": "Copyright",
     "customer_account": "Customer account",
     "describe_the_video_for": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
@@ -125,6 +126,7 @@
     "section_layout": "Section layout",
     "section_link": "Section link",
     "section_size": "Section size",
+    "select_product_to_display": "Select a product to display",
     // Section header for width and height controls
     "size": "Size",
     "slideshow_width": "Slide width",
@@ -218,7 +220,8 @@
     "video_autoplay": "Videos will be muted by default",
     "video_external": "Use a YouTube or Vimeo URL",
     "pills_usage": "Used for applied filters, discount codes, and search suggestions",
-    "media_type_info": "Features are populated from your menu links"
+    "media_type_info": "Features are populated from your menu links",
+    "image_override_description": "Optional: Override the product's featured image with a custom image"
   },
   "names": {
     "column": "Column",
@@ -290,6 +293,7 @@
     "faq_section": "FAQ",
     "featured_collection": "Featured collection",
     "featured_product": "Product highlight",
+    "featured_product_split": "Featured product split",
     "featured_image": "Featured image",
     "filters": "Filtering and sorting",
     "follow_on_shop": "Follow on Shop",
@@ -877,6 +881,7 @@
     "image_icon": "Image icon",
     "image_opacity": "Image opacity",
     "image_position": "Image position",
+    "image_override": "Image override",
     "image_ratio": "Image ratio",
     "inherit_color_scheme": "Inherit color scheme",
     "inventory_threshold": "Low stock threshold",
@@ -1051,6 +1056,12 @@
     "show_second_image_on_hover": "Show second image on hover",
     "show_swatch_label": "Text labels for swatches",
     "show_tax_info": "Tax information",
+    "show_vendor": "Show vendor",
+    "show_price": "Show price",
+    "show_description": "Show description",
+    "description_length": "Description length",
+    "show_button": "Show button",
+    "button_text": "Button text",
     // Font size or element dimensions setting
     "size": "Size",
     "size_mobile": "Mobile size",
