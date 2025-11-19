@@ -402,7 +402,7 @@
       ],
       "name": "t:names.featured_product_split",
       "settings": {
-        "product": "skinclear-elixir-1",
+        "product": "organic-cotton-hoodie",
         "layout": "image-left",
         "content_alignment": "center",
         "section_width": "page-width",
