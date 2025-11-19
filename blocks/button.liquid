@@ -1,4 +1,12 @@
-{% render 'button', link: block.settings.link %}
+{% liquid
+  # Use closest.product URL if link is blank, otherwise use the provided link
+  assign link = block.settings.link
+  if link == blank and closest.product != blank
+    assign link = closest.product.url
+  endif
+%}
+
+{% render 'button', link: link %}
 
 {% schema %}
 {

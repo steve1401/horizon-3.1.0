@@ -1,6 +1,14 @@
 {% liquid
-  assign product = block.settings.product
-  if request.visual_preview_mode and product == blank
+  # Use closest.product if available, otherwise fall back to block setting
+  assign product = closest.product | default: block.settings.product
+  
+  # If custom text is provided, use it, otherwise use product description
+  assign text = block.settings.text
+  if text == blank and product != blank
+    assign text = product.description
+  endif
+  
+  if request.visual_preview_mode and text == blank
     assign product = collections.all.products.first
     assign text = product.description
   endif

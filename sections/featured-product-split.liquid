@@ -36,6 +36,7 @@
   >
     <div
       class="featured-product-split__container featured-product-split__container--{{ section_settings.layout }}"
+      style="--content-alignment: {{ section_settings.content_alignment | default: 'center' }};"
     >
       {% comment %} Product Image {% endcomment %}
       <div class="featured-product-split__image-wrapper">
@@ -69,9 +70,9 @@
       </div>
 
       {% comment %} Product Content - Blocks Area {% endcomment %}
-      <div class="featured-product-split__content">
+      {% comment %} <div class="featured-product-split__content"> {% endcomment %}
         {% content_for 'blocks', closest.product: selected_product %}
-      </div>
+      {% comment %} </div> {% endcomment %}
     </div>
   </div>
 </div>
@@ -85,7 +86,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    align-items: center;
+    align-items: var(--content-alignment, center);
 
     @media screen and (min-width: 750px) {
       grid-template-columns: 1fr 1fr;
@@ -126,6 +127,7 @@
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    height: 100%;
   }
 
   /* Layout: Image on left (default) */
@@ -218,6 +220,26 @@
     },
     {
       "type": "select",
+      "id": "content_alignment",
+      "label": "t:settings.content_alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "t:options.top"
+        },
+        {
+          "value": "center",
+          "label": "t:options.center"
+        },
+        {
+          "value": "flex-end",
+          "label": "t:options.bottom"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
       "id": "section_width",
       "label": "t:settings.width",
       "options": [
@@ -266,7 +288,34 @@
   "presets": [
     {
       "name": "t:names.featured_product_split",
-      "category": "t:categories.products"
+      "category": "t:categories.products",
+      "blocks": [
+        {
+          "type": "group",
+          "blocks": [
+            {
+              "type": "product-title",
+              "settings": {
+                "type_preset": "h2"
+              }
+            },
+            {
+              "type": "product-description",
+              "settings": {
+                "text": "",
+                "width": "none"
+              }
+            },
+            {
+              "type": "button",
+              "settings": {
+                "label": "Shop Now",
+                "link": ""
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
